@@ -1,8 +1,8 @@
 #Statamic-JSON
 
-Inspired by the Ruby on Rails Jbuilder gem https://github.com/rails/jbuilder
-
 JSON for Statamic gives you a simple DSL for declaring JSON structures in Statamic templates. You can use Statamic conditionals, loops, and entries within the JSON structure to control output.
+
+Inspired by the Ruby on Rails Jbuilder gem https://github.com/rails/jbuilder
 
 ---
 
