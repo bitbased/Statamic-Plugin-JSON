@@ -10,11 +10,11 @@ JSON for Statamic gives you a simple DSL for declaring JSON structures in Statam
 
 - `json:pretty` Outputs pretty JSON
 - `json:ugly` Outputs minified JSON
-- `json(name,value)` Creates a JSON attribute
+- `json(name,value)` Creates a JSON named value
 - `json:hash[0-9]` Creates a JSON hash
-- `json:hash[0-9](name)` Creates a JSON attribute of type hash
+- `json:hash[0-9](name)` Creates a JSON named hash
 - `json:array[0-9]` Creates a JSON array
-- `json:array[0-9](name)` Creates a JSON attribute of type array
+- `json:array[0-9](name)` Creates a JSON named array
 
 ---
 
