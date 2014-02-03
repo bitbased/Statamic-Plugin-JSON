@@ -36,7 +36,7 @@ JSON for Statamic gives you a simple DSL for declaring JSON structures in Statam
 
 ## Example
 
-Note the indexed `json:array0` and `json:array1` for proper nesting. Also `json:pretty` will strip any trailing `,` from the end of hashes or arrays.
+Note the indexed `json:array0` and `json:array1` for proper nesting. Also `json:pretty`/`json:ugly` will strip any trailing `,` from the end of hashes or arrays.
 
 ```
   <script>
