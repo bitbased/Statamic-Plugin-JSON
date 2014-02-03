@@ -40,7 +40,7 @@ Note the indexed `json:array0` and `json:array1` for proper nesting.
 
 ```
   <script>
-  var resources = {{json:pretty}}
+  var resources = {{ json:pretty }}
     {{ json:array0 }}
       {{ entries:listing folder="gallery" }}
         {{ if photos }}
