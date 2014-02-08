@@ -59,7 +59,7 @@ class Plugin_json extends Plugin {
   public function json($type = "root")
   {
     $name = $this->fetch('name');
-    $value = $this->fetch('value');
+    $value = $this->fetch('value', null, false, false, false);
     if($name)
     {
       if ($value) return "\"$name\": ".json_encode($value).",";        
