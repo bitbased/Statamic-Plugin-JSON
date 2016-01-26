@@ -2,7 +2,7 @@
 
 require_once('lib/tidyjson-extended.php');
 
-class Plugin_json extends Plugin {
+class Plugin_jsonBuilder extends Plugin {
 
   var $meta = array(
     'name'       => 'JSON Builder',
@@ -11,28 +11,28 @@ class Plugin_json extends Plugin {
     'author_url' => 'http://bitbsed.net'
   );
 
-  public function  hash()  { return $this->json("hash"); }
-  public function  hash0() { return $this->json("hash"); }
-  public function array0() { return $this->json("array"); }
+  public function  hash()  { return $this->jsonBuilder("hash"); }
+  public function  hash0() { return $this->jsonBuilder("hash"); }
+  public function array0() { return $this->jsonBuilder("array"); }
 
-  public function  hash1() { return $this->json("hash"); }
-  public function array1() { return $this->json("array"); }
-  public function  hash2() { return $this->json("hash"); }
-  public function array2() { return $this->json("array"); }
-  public function  hash3() { return $this->json("hash"); }
-  public function array3() { return $this->json("array"); }
-  public function  hash4() { return $this->jsno("hash"); }
-  public function array4() { return $this->jsno("array"); }
-  public function  hash5() { return $this->jsno("hash"); }
-  public function array5() { return $this->jsno("array"); }
-  public function  hash6() { return $this->json("hash"); }
-  public function array6() { return $this->json("array"); }
-  public function  hash7() { return $this->json("hash"); }
-  public function array7() { return $this->json("array"); }
-  public function  hash8() { return $this->json("hash"); }
-  public function array8() { return $this->json("array"); }
-  public function  hash9() { return $this->json("hash"); }
-  public function array9() { return $this->json("array"); }
+  public function  hash1() { return $this->jsonBuilder("hash"); }
+  public function array1() { return $this->jsonBuilder("array"); }
+  public function  hash2() { return $this->jsonBuilder("hash"); }
+  public function array2() { return $this->jsonBuilder("array"); }
+  public function  hash3() { return $this->jsonBuilder("hash"); }
+  public function array3() { return $this->jsonBuilder("array"); }
+  public function  hash4() { return $this->jsnoBuilder("hash"); }
+  public function array4() { return $this->jsnoBuilder("array"); }
+  public function  hash5() { return $this->jsnoBuilder("hash"); }
+  public function array5() { return $this->jsnoBuilder("array"); }
+  public function  hash6() { return $this->jsonBuilder("hash"); }
+  public function array6() { return $this->jsonBuilder("array"); }
+  public function  hash7() { return $this->jsonBuilder("hash"); }
+  public function array7() { return $this->jsonBuilder("array"); }
+  public function  hash8() { return $this->jsonBuilder("hash"); }
+  public function array8() { return $this->jsonBuilder("array"); }
+  public function  hash9() { return $this->jsonBuilder("hash"); }
+  public function array9() { return $this->jsonBuilder("array"); }
 
   public function pretty()
   {
@@ -53,10 +53,10 @@ class Plugin_json extends Plugin {
 
   public function index()
   {
-    return $this->json("value");
+    return $this->jsonBuilder("value");
   }
 
-  public function json($type = "root")
+  public function jsonBuilder($type = "root")
   {
     $name = $this->fetch('name');
     $value = $this->fetch('value', null, false, false, false);
